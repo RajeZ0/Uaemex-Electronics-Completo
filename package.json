@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev --port 8080",
-    "lint": "next lint",
+    "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "db:seed": "prisma db seed"
   },
   "dependencies": {
@@ -39,6 +39,7 @@
     "@radix-ui/react-toggle": "latest",
     "@radix-ui/react-toggle-group": "latest",
     "@radix-ui/react-tooltip": "latest",
+    "@tailwindcss/postcss": "^4.1.9",
     "@vercel/analytics": "latest",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
@@ -64,7 +65,6 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.9",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -79,4 +79,3 @@
     "seed": "tsx prisma/seed.ts"
   }
 }
-
